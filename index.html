@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clara Colleret</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+ 
+ <style>
+    .projet h1 {
+      font-family: "Lexend Giga", sans-serif;
+    }
+
+    .projet h1 {
+      margin: 0; /* Ensure no extra margin for h1 */
+    }
+
+    header {
+      .windsong-regular {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.windsong-medium {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+      font-family: "WindSong", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 46px;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding-left: 30px;
+
+      text-align: left;
+    
+      color: rgb(255, 255, 255);
+    }
+  </style>
+
+
+
+ 
+<nav style="position: absolute; top: 70px; right: 40px;">
+  <a href="#about" style="color: white; text-decoration: none; font-family: 'Lexend Giga', sans-serif; font-size: 22px;">à propos</a>
+</nav>
+
+<section id="about" class="overlay" style="display: none;">
+  <div class="fiche">
+    <h2 style="font-family: 'Lexend Giga', sans-serif; font-size: 36px; margin-bottom: 20px;">à propos</h2>
+    <p style="font-family: 'Lexend Giga', sans-serif; font-size: 18px; line-height: 1.6;">
+      Clara Colleret, étudiante en deuxième année à l'École Supérieure d'Arts et de Design d'Amiens, j’aime explorer
+      les nombreuses possibilités qu’offre le design graphique
+      à travers différents médiums, tout en combinant mes projets avec d’autres pratiques telles que la photographie, la mode ou encore le dessin.<br>  
+  <br>
+    contact :
+    <br>
+mail : ccolleret@gmail.com <br>
+instagram : @cllrtclara 
+    </p>
+    <span class="close" onclick="closeAbout()">×</span>
+  </div>
+</section>
+
+<script>
+  const aboutLink = document.querySelector('a[href="#about"]');
+  const aboutSection = document.getElementById('about');
+
+  aboutLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    aboutSection.style.display = 'block';
+  });
+
+  function closeAbout() {
+    aboutSection.style.display = 'none';
+  }
+</script>
+
+  </style>
+  <style>
+
+    body {
+      margin: 0px;
+      padding: 0;
+      overflow-x: hidden;
+      font-weight: 400;
+      font-size: 400;
+      background-color: black;
+    }
+  
+  
+  
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+
+.projet h1 {
+  background: linear-gradient(to right, hwb(308 69% 1%), black); /* Gradient from pink to black */
+  color: white; /* White text */
+  padding: 20px 30px; /* Padding inside the box */
+  border-radius: 25px; /* Rounded corners */
+  display: inline-block; /* Ensure the box wraps around the text */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's width and height */
+  overflow: hidden; /* Prevent content from overflowing */
+  padding-left: 30px;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+    .overlay{
+      position: absolute;
+      width: 100%;
+      min-height: 100vh;
+      z-index: 9999;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 48px;
+      top: 0;
+      left:0; 
+   
+    }
+    .close{
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      line-height: 48px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 48px;
+      background: #000;
+      border-radius: 24px;
+    }
+
+    .wrap{
+      width:100%;
+    }
+
+    .fiche{
+      margin: 20px auto;
+      max-width: 640px;
+      background:  hwb(308 78% 1%);
+      padding: 20px 30px 30px;
+      border-radius: 15px; /* Add rounded corners */
+      font-family: 'Lexend Giga', sans-serif; font-size: 15px; margin-bottom: 20px; text-align:left;
+      
+    }
+
+    .fiche img {
+      margin: 0 auto 20px;
+      display: block;
+      width: calc(100% + 40px);
+    }
+
+    .img-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center; /* Center images horizontally */
+    }
+    
+    .img {
+      width: calc(33.33% - 10px);
+      border-radius: 5px;
+    }
+
+  
+  </style>
+
+
+</head>
+
+
+<header>
+  <h1>Clara Colleret</h1>
+</header>
+
+  
+    </div> <!-- Conteneur pour les projets -->
+<body>
+
+    <div class="projets">
+      <div class="img-container">
+        <img class="img" src="image1.jpg" alt="Image 1">
+        <img class="img" src="image2.jpg" alt="Image 2">
+        <img class="img" src="image3.jpg" alt="Image 3">
+      </div>
+    </div> <!-- Conteneur pour les projets -->
+
+  
+    
+      <!-- tu peux copier-coller une autre fiche ici pour un autre projet -->
+    </div>
+
+
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7"></script>
+  <!-- motionPath -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap/dist/MotionPathPlugin.min.js"></script>
+
+    <script type="module" src="main.js" defer></script>
+
+
+
+</body>
+</html>
