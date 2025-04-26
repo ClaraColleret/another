@@ -1,1 +1,1 @@
-https://ClaraColleret.github.io/another
+https://ClaraColleret.github.io/another/
